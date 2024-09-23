@@ -28,3 +28,51 @@
 Для выполнения лабораторной работы было взято исходное изображение:
 
 ![Исходное изображение](pythonProject/data/dot_and_hole.jpg "Исходное изображение")
+
+Для начала исходное изображение было загруженно 
+
+
+```python
+filename = "dot_and_hole"
+img = cv.imread(f'data/{filename}.jpg', cv.IMREAD_GRAYSCALE)
+```
+
+Затем, для проведения дилатации средствами openCV были заданы параметры. Также взяты замеры времени до начала работы метода и после
+
+```python
+# Параметры для дилатации
+kernel = np.ones((3, 3), np.uint8)
+
+# Измеряем время выполнения дилатации с использованием OpenCV
+start_cv = time.time()  # Начало замера времени
+dilated_img_cv = cv.dilate(img, kernel, iterations=4)
+end_cv = time.time()  # Конец замера времени
+cv_time = end_cv - start_cv  # Время выполнения OpenCV
+```
+
+В качестве нативной реализации на python написана функция, которая обходит всё изображение по пикселям и сравнивает соседние, в диапазоне примитива 3 на 3, пиксели. Если в выбранной области имеется хотя бы один белый пиксель то выходной пиксель также устанавливается в белый цвет
+
+```python
+def dilate_manual(image, kernel):
+    # Получаем размеры изображения и ядра
+    img_height, img_width = image.shape
+    kernel_height, kernel_width = kernel.shape
+
+    # Создаем выходное изображение с теми же размерами
+    dilated_image = np.zeros_like(image)
+
+    # Вычисляем отступы для ядра
+    pad_height = kernel_height // 3
+    pad_width = kernel_width // 3
+
+    # Проходим по каждому пикселю изображения
+    for i in range(pad_height, img_height - pad_height):
+        for j in range(pad_width, img_width - pad_width):
+            # Проверяем область вокруг текущего пикселя
+            region = image[i - pad_height:i + pad_height + 1, j - pad_width:j + pad_width + 1]
+            # Если хотя бы один пиксель в области равен 255 (белый), устанавливаем пиксель в выходном изображении в 255
+            if np.any(region * kernel):
+                dilated_image[i, j] = 255
+
+    return dilated_image
+```
