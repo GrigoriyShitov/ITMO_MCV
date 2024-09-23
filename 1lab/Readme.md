@@ -126,9 +126,9 @@ manual_time = end_manual - start_manual  # Время выполнения ру�
 
 ## 5. Использованные источники
 
-https://habr.com/ru/articles/565378/
+[Анализ и обработка изображений с использованием операций математической морфологии, python и библиотеки OPEV. Habr](https://habr.com/ru/articles/565378/)
 
-https://habr.com/ru/articles/681248/
+[Обработка изображений с помощью библиотеки Python Pillow. Habr](https://habr.com/ru/articles/681248/)
 
 Computer Vision: Algorithms and Applications, 2nd Edition. Richard Szeliski
 
