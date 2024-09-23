@@ -8,4 +8,4 @@
 **5. Дилатация (размер примитива 3 на 3)**
 
 
-![plot](https://github.com/GrigoriyShitov/ITMO_MCV/tree/master/1lab/pythonProject/data1.jpg?raw=true)
+![plot](https://github.com/GrigoriyShitov/ITMO_MCV/tree/master/1lab/pythonProject/data/1.jpg?raw=true)
