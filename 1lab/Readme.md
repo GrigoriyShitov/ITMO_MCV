@@ -115,3 +115,6 @@ manual_time = end_manual - start_manual  # Время выполнения ру�
 
 График(plot) для нагрядного сравнения:
 ![plot](pythonProject/data/plot.png "plot")
+
+Сравнение времени выполнения двух алгоритмов:
+![time](pythonProject/data/time.png "time")
