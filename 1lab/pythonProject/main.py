@@ -38,8 +38,8 @@ def dilate_manual(image, kernel):
     dilated_image = np.zeros_like(image)
 
     # Вычисляем отступы для ядра
-    pad_height = kernel_height // 2
-    pad_width = kernel_width // 2
+    pad_height = kernel_height // 3
+    pad_width = kernel_width // 3
 
     # Проходим по каждому пикселю изображения
     for i in range(pad_height, img_height - pad_height):
@@ -77,3 +77,6 @@ plt.show()
 # Выводим время выполнения для обеих реализаций
 print(f"Time taken by OpenCV dilation: {cv_time:.6f} seconds")
 print(f"Time taken by Manual dilation: {manual_time:.6f} seconds")
+
+cv.imwrite(f'data/{filename}_manual_dilated.jpg', dilated_img_manual)
+cv.imwrite(f'data/{filename}_cv_dilated.jpg', dilated_img_cv)
