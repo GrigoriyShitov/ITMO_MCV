@@ -112,3 +112,6 @@ manual_time = end_manual - start_manual  # Время выполнения ру�
 
 
 ![manual_dilated](pythonProject/data/dot_and_hole_manual_dilated.jpg "manual_dilated")
+
+График(plot) для нагрядного сравнения:
+![plot](pythonProject/data/plot.png "plot")
