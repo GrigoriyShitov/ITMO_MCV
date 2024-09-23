@@ -27,4 +27,5 @@
 
 Для выполнения лабораторной работы было взято исходное изображение:
 
-![Alt text](pythonProject/data/dot_and_hole.jpg)
+![](pythonProject/data/dot_and_hole.jpg "Исходное изображение")
+
