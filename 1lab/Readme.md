@@ -76,3 +76,33 @@ def dilate_manual(image, kernel):
 
     return dilated_image
 ```
+Также, как и с OpenCV, были заданы параметры структурного элемента и входное изображение было дополнительно преобразованно в бинарное(для корректного отображения). Таким же образом был проведен замер времени выполнения функции
+```python
+
+# Преобразуем изображение в бинарное (0 и 255)
+_, binary_img = cv.threshold(img, 128, 255, cv.THRESH_BINARY)
+
+# Создаем ядро размером 3x3
+kernel = np.ones((3, 3), np.uint8)
+
+# Измеряем время выполнения ручной реализации дилатации
+start_manual = time.time()  # Начало замера времени
+dilated_img_manual = dilate_manual(binary_img, kernel)
+for i in range(3):
+    dilated_img_manual = dilate_manual(dilated_img_manual, kernel)
+end_manual = time.time()  # Конец замера времени
+manual_time = end_manual - start_manual  # Время выполнения ручной реализации
+```
+
+## 3. Результаты работы и тестирования системы
+
+В результате работы программы были полученны следующие результаты:
+
+Исходное изобрадение:
+![исходное изображение](/home/grigoriy/Desktop/учеба/2k 1s/ITMO_MCV/1lab/pythonProject/data/dot_and_hole.jpg "исходное изображение")
+
+Изображение полученное в результате дилатации методом OpenCV:
+![cv_dilated](/home/grigoriy/Desktop/учеба/2k 1s/ITMO_MCV/1lab/pythonProject/data/dot_and_hole_cv_dilated.jpg "cv_dilated")
+
+Изображение полученное в результате дилатации самописным методом
+![manual_dilated](/home/grigoriy/Desktop/учеба/2k 1s/ITMO_MCV/1lab/pythonProject/data/dot_and_hole_manual_dilated.jpg "manual_dilated")
