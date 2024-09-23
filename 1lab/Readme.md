@@ -8,4 +8,4 @@
 **5. Дилатация (размер примитива 3 на 3)**
 
 
-![alt text](pythonProject/data/1.jpg)
+![Alt text](pythonProject/data/1.jpg)
