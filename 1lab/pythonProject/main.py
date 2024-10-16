@@ -60,7 +60,7 @@ kernel = np.ones((3, 3), np.uint8)
 
 # Измеряем время выполнения ручной реализации дилатации
 start_manual = time.time()  # Начало замера времени
-dilated_img_manual = dilate_manual(binary_img, kernel)
+dilated_img_manual = dilate_manual(img, kernel)
 for i in range(3):
     dilated_img_manual = dilate_manual(dilated_img_manual, kernel)
 end_manual = time.time()  # Конец замера времени
