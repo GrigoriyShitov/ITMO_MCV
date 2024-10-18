@@ -260,6 +260,7 @@ int main() {
 ![Time Chart](charts/scale_depend.png)
 
 **Таблица всех результатов выполнения программы**
+
 ![Time Table](charts/Time%20Table.png)
 
 Результаты работы и тестирования системы
