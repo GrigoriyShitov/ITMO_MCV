@@ -199,32 +199,32 @@ int main() {
 
 1.1 Сложение tree:
 
-![added](/images/added_image_Tree.jpg)
+![added](images/added_image_Tree.jpg)
 
 1.2 Вычитание tree:
-![sub](/images/subtracted_image_Tree.jpg)
+![sub](images/subtracted_image_Tree.jpg)
 
 1.3 Сложение Lenna:
 
-![added](/images/added_image_Lenna.jpg)
+![added](images/added_image_Lenna.jpg)
 
 1.4 Вычитание Lenna:
-![sub](/images/subtracted_image_Lenna.jpg)
+![sub](images/subtracted_image_Lenna.jpg)
 
 2. С использованием Neon
 2.1 Сложение tree:
 
-![added](/images/added_image_Tree_neon.jpg)
+![added](images/added_image_Tree_neon.jpg)
 
 2.2 Вычитание tree:
-![sub](/images/subtracted_image_Tree_neon.jpg)
+![sub](images/subtracted_image_Tree_neon.jpg)
 
 2.3 Сложение Lenna:
 
-![added](/images/added_image_Lenna_neon.jpg)
+![added](images/added_image_Lenna_neon.jpg)
 
 2.4 Вычитание Lenna:
-![sub](/images/subtracted_image_Lenna_neon.jpg)
+![sub](images/subtracted_image_Lenna_neon.jpg)
 
 ### 3.2 Оценка производительности
 
