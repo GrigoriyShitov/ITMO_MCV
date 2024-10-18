@@ -253,11 +253,11 @@ int main() {
 
 Для алгоритма с использованием Neon:
 
-![Neon Time Chart](/charts/neon_scale_depend.png)
+![Neon Time Chart](charts/neon_scale_depend.png)
 
 Аналогичная картина для алгоритма без Neon:
 
-![Time Chart](/charts/scale_depend.png)
+![Time Chart](charts/scale_depend.png)
 
 Результаты работы и тестирования системы
 Результаты должны включать:
