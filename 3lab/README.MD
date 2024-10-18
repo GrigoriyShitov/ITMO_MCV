@@ -202,6 +202,7 @@ int main() {
 ![added](images/added_image_Tree.jpg)
 
 1.2 Вычитание tree:
+
 ![sub](images/subtracted_image_Tree.jpg)
 
 1.3 Сложение Lenna:
@@ -209,6 +210,7 @@ int main() {
 ![added](images/added_image_Lenna.jpg)
 
 1.4 Вычитание Lenna:
+
 ![sub](images/subtracted_image_Lenna.jpg)
 
 2. С использованием Neon
@@ -217,6 +219,7 @@ int main() {
 ![added](images/added_image_Tree_neon.jpg)
 
 2.2 Вычитание tree:
+
 ![sub](images/subtracted_image_Tree_neon.jpg)
 
 2.3 Сложение Lenna:
@@ -224,6 +227,7 @@ int main() {
 ![added](images/added_image_Lenna_neon.jpg)
 
 2.4 Вычитание Lenna:
+
 ![sub](images/subtracted_image_Lenna_neon.jpg)
 
 ### 3.2 Оценка производительности
@@ -236,9 +240,11 @@ int main() {
 **В ходе проведения исследования были получены следующие результаты:**
 
 В случае эксперимента с изображениями большего размера ([tree.png](images/tree.png) и [tree_gs.png](images/tree_gs.png)) были получены следующие результаты выполнения программы:
+
 ![Tree Chart](charts/tree.png)
 
 В случае эксперимента с изображениями меньшего размера ([Lenna.png](images/Lenna.png) и [Lenna_gs.png](images/Lenna_gs.png)) были получены следующие результаты выполнения программы:
+
 ![Tree Chart](charts/Lenna.png)
 
 **Графики зависимости времени выполнения от размера изображения.**
