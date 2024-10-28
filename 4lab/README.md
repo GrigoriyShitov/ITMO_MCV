@@ -89,7 +89,7 @@ model = alexnet(pretrained=True).eval().cuda()
 print("Model load time: {:.4f} seconds".format(time.time()-timest))
 
 # Пример использования
-image_path = "/content/imgs/cat.jpeg"  # Укажите путь к вашему изображению
+image_path = "/content/imgs/cat.jpeg"  
 predicted_class = predict(image_path)
 print(f"Predicted class index: {predicted_class}")
 ```
@@ -155,15 +155,12 @@ def load_trt_model():
     print(f"TRT Model load time: {time.time() - timest:.4f} seconds")
     return model_trt
 
-# Конвертируем модель в TensorRT один раз
-# Закомментируйте это, если модель уже конвертирована и сохранена
-#convert_model_to_trt()
 
 # Загружаем готовую модель TensorRT
 model_trt = load_trt_model()
 
 # Пример использования с изображением
-image_path = "/content/imgs/cat.jpeg"  # Укажите путь к вашему изображению
+image_path = "/content/imgs/cat.jpeg" 
 predicted_class_trt = predict_with_trt(image_path)
 print(f"Predicted class index (TRT): {predicted_class_trt}")
 ```
@@ -174,6 +171,10 @@ print(f"Predicted class index (TRT): {predicted_class_trt}")
 
 В ходе экспериментов были получены следующие результаты выполнения программ:
 ![model_comparison](charts/model_comparison.png)
+
+## 3.2. Затрачиваемые ресурсы 
+Во время проведения экспериментов потребление ресурсов было следующим:
+![resources](images/resources.jpg)
 
 # 4.Выводы по работе
 Разработанная система демонстрирует высокую производительность при обработке изображений благодаря использованию архитектуры AlexNet и оптимизации через TensorRT. Использование сверточных нейронных сетей позволяет эффективно извлекать признаки изображений и классифицировать их с высокой точностью.
